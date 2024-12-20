@@ -71,4 +71,35 @@ document.addEventListener('DOMContentLoaded', () => {
     spaceBetween: 0,
     loop: true,
   });
+
+  ScrollReveal().reveal('.explore__image img', {
+    ...scrollRevealOption,
+    origin: 'right',
+  });
+
+  ScrollReveal().reveal('.explore__content .section__subheader', {
+    ...scrollRevealOption,
+    delay: 500,
+  });
+
+  ScrollReveal().reveal('.explore__content .section__header', {
+    ...scrollRevealOption,
+    delay: 1000,
+  });
+
+  ScrollReveal().reveal('.explore__content .section__description', {
+    ...scrollRevealOption,
+    delay: 1500,
+  });
+
+  ScrollReveal().reveal('.explore__content .explore__btn', {
+    ...scrollRevealOption,
+    delay: 2000,
+  });
+
+  ScrollReveal().reveal('.explore__grid div', {
+    duration: 1000,
+    delay: 1500,
+    interval: 500,
+  });
 });
