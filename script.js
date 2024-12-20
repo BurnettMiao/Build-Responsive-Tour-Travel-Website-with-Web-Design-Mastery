@@ -65,4 +65,10 @@ document.addEventListener('DOMContentLoaded', () => {
     delay: 1500,
     interval: 500,
   });
+
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    loop: true,
+  });
 });
