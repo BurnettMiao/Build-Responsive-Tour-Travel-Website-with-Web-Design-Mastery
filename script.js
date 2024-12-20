@@ -29,16 +29,40 @@ document.addEventListener('DOMContentLoaded', () => {
     origin: 'right',
     interval: 500,
   });
+
   ScrollReveal().reveal('.header__content h1', {
     ...scrollRevealOption,
     delay: 1500,
   });
+
   ScrollReveal().reveal('.header__content .section__description', {
     ...scrollRevealOption,
     delay: 2000,
   });
+
   ScrollReveal().reveal('.header__content form', {
     ...scrollRevealOption,
     delay: 2500,
+  });
+
+  ScrollReveal().reveal('.choose__image img', {
+    ...scrollRevealOption,
+    origin: 'left',
+  });
+
+  ScrollReveal().reveal('.choose__content .section__subheader', {
+    ...scrollRevealOption,
+    delay: 500,
+  });
+
+  ScrollReveal().reveal('.choose__content .section__header', {
+    ...scrollRevealOption,
+    delay: 1000,
+  });
+
+  ScrollReveal().reveal('.choose__list li', {
+    ...scrollRevealOption,
+    delay: 1500,
+    interval: 500,
   });
 });

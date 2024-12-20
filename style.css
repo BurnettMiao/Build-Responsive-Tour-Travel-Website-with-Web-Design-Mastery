@@ -249,6 +249,51 @@ nav {
   box-shadow: none;
 }
 
+.choose__container {
+  display: grid;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.choose__image img {
+  max-width: 475px;
+  margin-inline: auto;
+  border-radius: 2rem;
+  box-shadow: 30px -30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.choose__list {
+  margin-top: 4rem;
+  display: grid;
+  gap: 3rem;
+}
+
+.choose__list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.choose__list li span {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 2rem;
+  color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+.choose__list li h4 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.choose__list li p {
+  color: var(--text-light);
+}
+
 @media screen and (min-width: 768px) {
   nav {
     position: static;
@@ -328,5 +373,10 @@ nav {
     border-radius: 1.5rem;
     backdrop-filter: blur(5px);
     z-index: 10;
+  }
+
+  .choose__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
   }
 }
